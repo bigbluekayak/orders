@@ -1,0 +1,22 @@
+{
+    "name": "Orders",
+    "repository": "https://github.com/bigbluekayak/orders",
+    "env": {
+        "RECIPIENT_EMAIL": {
+            "description": "The email where the order notification is sent",
+            "required": "true",
+            "value": "user@example.com"
+        }
+    },
+    "addons": [
+        {
+            "plan": "sendgrid:starter"
+        },
+        {
+            "plan": "mongolab:sandbox"
+        },
+        {
+            "plan": "papertrail:choklad"
+        }
+    ]
+}
